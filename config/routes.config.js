@@ -16,8 +16,8 @@ router.get('/', common.home);
 //AUTH ROUTES
 router.get('/register', auth.register)
 router.post('/register', auth.doRegister)
-
-
+router.get('/login', auth.login)
+// routes.post('/login', auth.doLogin)
 
 
 
