@@ -12,12 +12,13 @@ const auth = require('../controllers/auth.controller')
 //COMMON ROUTES 
 router.get('/', common.home);
 //router.get('/', common.home="(req, res, next) => { res.render('common/home'))}"
+router.get('/profile', common.profile)
 
 //AUTH ROUTES
 router.get('/register', auth.register)
 router.post('/register', auth.doRegister)
 router.get('/login', auth.login)
-// routes.post('/login', auth.doLogin)
+router.post('/login', auth.doLogin)
 
 
 

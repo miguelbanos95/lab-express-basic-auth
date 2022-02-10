@@ -4,3 +4,7 @@
 module.exports.home = (req, res, next) => {
     res.render('common/home')
 }
+
+module.exports.profile = (req, res, next) => {
+    res.render('common/profile')
+}

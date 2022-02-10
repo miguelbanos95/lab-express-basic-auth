@@ -42,6 +42,9 @@ userSchema.pre('save', function(next){
     next()
   }
 })
+userSchema.methods.checkPassword = function(password){
+  return bcrypt.compare(password, this.password)
+}
 //asi guarda mongoose al modelo
 const User = model("User", userSchema);
 module.exports = User;
